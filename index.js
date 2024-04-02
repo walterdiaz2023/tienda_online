@@ -4,7 +4,7 @@ const mercadopago = require("mercadopago");
 const app = express();
 const port = process.env.PORT || 3000;
 
-const client = new mercadopago.MercadoPagoConfig({ accessToken: 'APP_USR-2580181145743308-020715-5818d747d6018378d6dff68fa3f69871-1666921318', options: { timeout: 5000 } });
+const client = new mercadopago.MercadoPagoConfig({ accessToken: 'xxxx', options: { timeout: 5000 } });
 const preferenceClient = new mercadopago.Preference(client);
 const paymentClient = new mercadopago.Payment(client);
 const merchantOrderClient = new mercadopago.MerchantOrder(client);
